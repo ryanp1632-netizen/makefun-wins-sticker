@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#2a2238" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <!-- backdrop the sticker sits on -->
+  <rect width="1024" height="1024" fill="#efebe4"/>
+
+  <g transform="rotate(-4 512 512)">
+    <!-- die-cut: white border around the dark body -->
+    <rect x="72" y="182" width="880" height="660" rx="92" fill="#ffffff" filter="url(#shadow)"/>
+    <rect x="98" y="208" width="828" height="608" rx="70" fill="#17142a"/>
+
+    <!-- the excuse, crossed out -->
+    <text x="512" y="340" text-anchor="middle" font-family="Consolas, monospace" font-size="64"
+          fill="#b9b4d6">works on my machine</text>
+    <path d="M 172 324 C 300 312, 420 332, 540 320 S 760 314, 856 322"
+          fill="none" stroke="#ff4f6e" stroke-width="11" stroke-linecap="round"/>
+
+    <!-- the claim -->
+    <text x="512" y="536" text-anchor="middle" font-family="'Segoe UI Black', 'Arial Black', sans-serif"
+          font-weight="900" font-size="150" fill="#fff6e6" letter-spacing="6">WINS ON</text>
+    <text x="512" y="718" text-anchor="middle" font-family="'Segoe UI Black', 'Arial Black', sans-serif"
+          font-weight="900" font-size="160" fill="#c8ff3c">make<tspan fill="#ff4f6e">.</tspan>fun</text>
+  </g>
+</svg>
